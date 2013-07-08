@@ -22,10 +22,9 @@ var JekyllPlugins = function(){
 
     this.listingTmpl = ' \
         <div class="plugin"> \
-          <p class="title">${title}</p> \
+          <p class="title"><a href="${repository}">${title}</a></p> \
           <p class="description">${description}</p> \
-          <p class="author">@${author}</p> \
-          <p class="repository">${repository}</p> \
+          <p class="author">by <a href="https://github.com/${author}">@${author}</a></p> \
         </div>';
 
     this._loadPlugins = function(url) {
@@ -33,6 +32,7 @@ var JekyllPlugins = function(){
         $.getJSON(url, function(data) {
             for(var i = 0; i < data.plugins.length; i++){
                 var plugin = data.plugins[i];
+                plugin.repository_name = plugin.repository.replace("https://github.com/", "")
                 $(jp.listingSelector).append(jp.listingTmpl.template(plugin));
             }
             console.log("Loaded " + data.plugins.length + " plugins.");
