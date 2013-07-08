@@ -4,11 +4,13 @@ layout: none
 
 {
     "plugins": [{% for post in site.posts %}
-        {
-            "title": "{{ post.title }}",
-            "description": "{{ post.description }}",
-            "author": "{{ post.author }}",
-            "git": "{{ post.git }}"
-        },{% endfor %}
+    {
+        "title":       "{{ post.title }}",
+        "description": "{{ post.description }}",
+        "author":      "{{ post.author }}",
+        "repository":  "{{ post.repository }}"
+    }{% if forloop.last %}{% else %},{% endif %}
+    {% endfor %}
     ]
 }
+
