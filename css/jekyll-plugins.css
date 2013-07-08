@@ -1,7 +1,10 @@
-.plugin {
+body {
   font-size: 0.8em;
   font-family: Consolas;
   color: gray;
+}
+
+.plugin {
   background-color: #FBF8F5;
 }
 
