@@ -1,1 +1,8 @@
----layout: plugintitle: jekyll-flickrdescription: author: git: "git@github.com:cnunciato/jekyll-flickr.git"---
+---
+layout: plugin
+title: jekyll-flickr
+description: 
+author: cnunciato
+git: git@github.com:cnunciato/jekyll-flickr.git
+repository: https://github.com/cnunciato/jekyll-flickr
+---

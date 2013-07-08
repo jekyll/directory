@@ -1,1 +1,8 @@
----layout: plugintitle: jekyll-pressdescription: author: git: "git@github.com:stereobooster/jekyll-press.git"---
+---
+layout: plugin
+title: jekyll-press
+description: 
+author: stereobooster
+git: git@github.com:stereobooster/jekyll-press.git
+repository: https://github.com/stereobooster/jekyll-press
+---

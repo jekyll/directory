@@ -1,1 +1,8 @@
----layout: plugintitle: jekyll_flickr_set_tagdescription: author: git: "git@github.com:tsmango/jekyll_flickr_set_tag.git"---
+---
+layout: plugin
+title: jekyll_flickr_set_tag
+description: 
+author: tsmango
+git: git@github.com:tsmango/jekyll_flickr_set_tag.git
+repository: https://github.com/tsmango/jekyll_flickr_set_tag
+---

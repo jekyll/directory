@@ -1,1 +1,8 @@
----layout: plugintitle: jekyll_oembeddescription: author: git: "git@github.com:stereobooster/jekyll_oembed.git"---
+---
+layout: plugin
+title: jekyll_oembed
+description: 
+author: stereobooster
+git: git@github.com:stereobooster/jekyll_oembed.git
+repository: https://github.com/stereobooster/jekyll_oembed
+---
