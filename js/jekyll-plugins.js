@@ -28,19 +28,23 @@ var JekyllPlugins = function(){
           <p class="repository">${repository}</p> \
         </div>';
 
-    this.loadPlugins = function() {
+    this._loadPlugins = function(url) {
         var jp = this;
-        $.getJSON("plugins.json", function(data) {
+        $.getJSON(url, function(data) {
             for(var i = 0; i < data.plugins.length; i++){
                 var plugin = data.plugins[i];
                 $(jp.listingSelector).append(jp.listingTmpl.template(plugin));
             }
+            console.log("Loaded " + data.plugins.length + " plugins.");
         });
     };
-}
 
-$(function(){
-    var jp = new JekyllPlugins();
-    jp.loadPlugins();
-});
+    this.loadLatest = function() {
+        this._loadPlugins("latest.json");
+    };
+
+    this.loadArchive = function() {
+        this._loadPlugins("plugins.json");
+    }
+}
 
