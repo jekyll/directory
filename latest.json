@@ -1,0 +1,16 @@
+---
+layout: none
+---
+
+{
+    "plugins": [{% for post in site.posts limit:10 %}
+    {
+        "title":       "{{ post.title }}",
+        "description": "{{ post.description }}",
+        "author":      "{{ post.author }}",
+        "repository":  "{{ post.repository }}"
+    }{% if forloop.last %}{% else %},{% endif %}
+    {% endfor %}
+    ]
+}
+
