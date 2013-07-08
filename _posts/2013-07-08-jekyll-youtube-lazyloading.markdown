@@ -1,0 +1,1 @@
+---layout: plugintitle: jekyll-youtube-lazyloadingdescription: author: git: "git@github.com:erossignon/jekyll-youtube-lazyloading.git"---

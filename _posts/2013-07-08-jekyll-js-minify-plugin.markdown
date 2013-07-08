@@ -1,0 +1,1 @@
+---layout: plugintitle: jekyll-js-minify-plugindescription: author: git: "git@github.com:lyoshenka/jekyll-js-minify-plugin.git"---

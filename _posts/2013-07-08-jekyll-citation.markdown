@@ -1,0 +1,1 @@
+---layout: plugintitle: jekyll-citationdescription: author: git: "git@github.com:archome/jekyll-citation.git"---

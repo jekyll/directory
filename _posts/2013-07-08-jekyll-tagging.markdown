@@ -1,0 +1,1 @@
+---layout: plugintitle: jekyll-taggingdescription: author: git: "git@github.com:pattex/jekyll-tagging.git"---

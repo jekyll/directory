@@ -1,0 +1,1 @@
+---layout: plugintitle: jekyll-cdndescription: author: zspencergit: "git://github.com/zspencer/jekyll-cdn.git"---

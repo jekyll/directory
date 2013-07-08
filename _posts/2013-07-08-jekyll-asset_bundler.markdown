@@ -1,0 +1,1 @@
+---layout: plugintitle: jekyll-asset_bundlerdescription: author: git: "git@github.com:moshen/jekyll-asset_bundler.git"---

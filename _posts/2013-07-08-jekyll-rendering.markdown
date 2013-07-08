@@ -1,0 +1,1 @@
+---layout: plugintitle: jekyll-renderingdescription: author: git: "git@github.com:blackwinter/jekyll-rendering.git"---

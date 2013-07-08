@@ -1,0 +1,1 @@
+---layout: plugintitle: jekyll-pandoc-plugindescription: author: git: "git@github.com:dsanson/jekyll-pandoc-plugin.git"---

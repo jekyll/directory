@@ -1,0 +1,1 @@
+---layout: plugintitle: jekyll_smilifydescription: author: git: "git@github.com:SaswatPadhi/jekyll_smilify.git"---

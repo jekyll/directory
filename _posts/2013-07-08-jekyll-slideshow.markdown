@@ -1,0 +1,1 @@
+---layout: plugintitle: jekyll-slideshowdescription: author: git: "git@github.com:matthewowen/jekyll-slideshow.git"---

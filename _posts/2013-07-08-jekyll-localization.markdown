@@ -1,0 +1,1 @@
+---layout: plugintitle: jekyll-localizationdescription: author: git: "git@github.com:blackwinter/jekyll-localization.git"---

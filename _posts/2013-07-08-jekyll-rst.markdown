@@ -1,0 +1,1 @@
+---layout: plugintitle: jekyll-rstdescription: author: git: "git@github.com:xdissent/jekyll-rst.git"---

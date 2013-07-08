@@ -1,0 +1,1 @@
+---layout: plugintitle: jekyll-jsondescription: author: git: "git@github.com:matthewowen/jekyll-json.git"---

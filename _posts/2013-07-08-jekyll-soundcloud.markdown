@@ -1,0 +1,1 @@
+---layout: plugintitle: jekyll-soundclouddescription: author: git: "git@github.com:cnunciato/jekyll-soundcloud.git"---

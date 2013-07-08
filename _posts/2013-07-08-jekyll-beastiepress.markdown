@@ -1,0 +1,1 @@
+---layout: plugintitle: jekyll-beastiepressdescription: author: git: "git@github.com:okeeblow/jekyll-beastiepress.git"---

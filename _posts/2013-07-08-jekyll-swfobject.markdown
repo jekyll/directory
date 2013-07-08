@@ -1,0 +1,1 @@
+---layout: plugintitle: jekyll-swfobjectdescription: author: git: "git@github.com:sectore/jekyll-swfobject.git"---

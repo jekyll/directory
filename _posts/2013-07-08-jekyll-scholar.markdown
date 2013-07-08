@@ -1,0 +1,1 @@
+---layout: plugintitle: jekyll-scholardescription: author: git: "git@github.com:inukshuk/jekyll-scholar.git"---

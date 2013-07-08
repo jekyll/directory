@@ -1,0 +1,1 @@
+---layout: plugintitle: jekyll-embedly-clientdescription: author: git: "git@github.com:robb/jekyll-embedly-client.git"---

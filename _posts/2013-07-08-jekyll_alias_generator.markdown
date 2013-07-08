@@ -1,0 +1,1 @@
+---layout: plugintitle: jekyll_alias_generatordescription: author: git: "git@github.com:tsmango/jekyll_alias_generator.git"---

@@ -1,0 +1,1 @@
+---layout: plugintitle: jekyll-ditaadescription: author: git: "git@github.com:matze/jekyll-ditaa.git"---

@@ -1,0 +1,1 @@
+---layout: plugintitle: jekyll-only_first_pdescription: author: git: "git@github.com:sebcioz/jekyll-only_first_p.git"---

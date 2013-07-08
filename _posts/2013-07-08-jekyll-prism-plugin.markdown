@@ -1,0 +1,1 @@
+---layout: plugintitle: jekyll-prism-plugindescription: author: git: "git@github.com:gmurphey/jekyll-prism-plugin.git"---

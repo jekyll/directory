@@ -1,0 +1,1 @@
+---layout: plugintitle: jekyll-jadedescription: author: snappylabsgit: "https://github.com/snappylabs/jade-jekyll-plugin.git"---

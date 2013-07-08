@@ -1,0 +1,1 @@
+---layout: plugintitle: bibjekylldescription: author: git: "git@github.com:pablooliveira/bibjekyll.git"---

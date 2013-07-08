@@ -1,0 +1,1 @@
+---layout: plugintitle: singlepage-jekylldescription: author: git: "git@github.com:JCB-K/singlepage-jekyll.git"---

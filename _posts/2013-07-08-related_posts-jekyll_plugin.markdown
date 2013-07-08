@@ -1,0 +1,1 @@
+---layout: plugintitle: related_posts-jekyll_plugindescription: author: git: "git@github.com:LawrenceWoodman/related_posts-jekyll_plugin.git"---

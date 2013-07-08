@@ -1,0 +1,1 @@
+---layout: plugintitle: jekyll-author-plugindescription: author: git: "git@github.com:multunus/jekyll-author-plugin.git"---

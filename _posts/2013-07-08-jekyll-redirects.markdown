@@ -1,0 +1,1 @@
+---layout: plugintitle: jekyll-redirectsdescription: author: zspencergit: "git://github.com/zspencer/jekyll-redirects.git"---

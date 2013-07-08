@@ -1,0 +1,1 @@
+---layout: plugintitle: jekyll-emojidescription: author: git: "git@github.com:chriskempson/jekyll-emoji.git"---

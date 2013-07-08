@@ -1,0 +1,1 @@
+---layout: plugintitle: jekyll-paginationdescription: author: git: "git@github.com:blackwinter/jekyll-pagination.git"---

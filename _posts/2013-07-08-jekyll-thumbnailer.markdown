@@ -1,0 +1,1 @@
+---layout: plugintitle: jekyll-thumbnailerdescription: author: git: "git@github.com:mrdanadams/jekyll-thumbnailer.git"---

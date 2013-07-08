@@ -1,0 +1,1 @@
+---layout: plugintitle: truncatehtmldescription: author: git: "git@github.com:MattHall/truncatehtml.git"---

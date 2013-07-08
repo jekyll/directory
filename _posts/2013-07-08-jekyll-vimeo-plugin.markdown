@@ -1,0 +1,1 @@
+---layout: plugintitle: jekyll-vimeo-plugindescription: author: git: "git@github.com:gummesson/jekyll-vimeo-plugin.git"---
