@@ -12,6 +12,7 @@ Plugins discovery for Jekyll, built with Jekyll – A proposal.
 3. Add a new file in `_posts` with today's date and the name of your plugin as the slug (e.g. `2013-07-19-my-cool-plugin.markdown`)
 4. Add plugin info in YAML front-matter:
 
+    ```yaml
     ---
     layout: plugin
     title: My-Cool-Plugin
@@ -20,6 +21,7 @@ Plugins discovery for Jekyll, built with Jekyll – A proposal.
     git: git://github.com/clone/url/for/my/project.git
     repository: https://github.com/ericdfields/Jekyll-Dribbble-Set-Tag
     ---
+    ```
 
 5. Save and submit a PR to this repo
 
