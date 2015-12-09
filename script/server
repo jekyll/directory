@@ -1,0 +1,3 @@
+#!/bin/sh
+open http://localhost:4000/plugins/
+bundle exec jekyll serve --baseurl="/plugins" $@
