@@ -1,14 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>{{ page.title }} / {{ site.title }}</title>
-    <script src="http://code.jquery.com/jquery-2.0.3.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="/js/jekyll-plugins.js" type="text/javascript" charset="utf-8"></script>
-    <link rel="stylesheet" href="/css/jekyll-plugins.css">
-</head>
-<body>
-    <h2>jekyll-plugins</h2>
-    {{ content }}
+{% include top.html %}
+
+<body class="wrap">
+  {% include header.html %}
+
+  {{ content }}
+
+  {% include footer.html %}
+  {% include analytics.html %}
+
 </body>
 </html>

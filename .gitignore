@@ -1,1 +1,6 @@
+.sass-cache
 _site/
+*.swp
+pkg/
+test/
+Gemfile.lock

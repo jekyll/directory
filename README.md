@@ -1,4 +1,4 @@
-plugins.jekyllrb.com
+jekyllrb.com/plugins/
 ====================
 
 Plugins discovery for Jekyll, built with Jekyll – A proposal.

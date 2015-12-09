@@ -1,14 +1,55 @@
 ---
 layout: default
-title: Welcome
+title: jekyll-import &bull; Import your old &amp; busted site to Jekyll
+overview: true
 ---
 
-<div class="plugins-listing">
-</div>
-
-<script>
-    $(function(){
-        var jp = new JekyllPlugins();
-        jp.loadLatest();
-    });
-</script>
+<section class="intro">
+  <div class="grid">
+    <div class="unit whole center-on-mobiles">
+      <p class="first">Import your old &amp; busted site or blog for use with Jekyll.</p>
+    </div>
+  </div>
+</section>
+<section class="features">
+  <div class="grid">
+    <div class="unit two-thirds">
+      <h2>Wide Range of Available Importers</h2>
+      <p>
+        <div class="grid">
+            {% for importer in site.importers %}
+            <div class="unit w-1-4 center-on-mobiles"><a href="{{ importer.url }}" title="{{ importer.title }} Importer">{{ importer.title }}</a></div>
+            {% endfor %}
+        </div>
+      </p>
+    </div>
+    <div class="unit one-third">
+      <h2>Open-Source</h2>
+      <p>
+        No importer for your system? No problem. Creating one is easy.
+      </p>
+      <p>
+        Found a problem with the importer? File an issue.
+      </p>
+      <a href="/docs/home/" class="">How to Contribute &rarr;</a>
+    </div>
+    <div class="clear"></div>
+  </div>
+</section>
+<section class="free-hosting">
+  <div class="grid">
+    <div class="unit whole">
+      <div class="grid pane">
+        <div class="unit whole center-on-mobiles">
+          <img src="img/octojekyll.png" alt="Free Jekyll hosting on GitHub Pages">
+          <div class="pane-content">
+            <h2 class="center-on-mobiles"><strong>Free hosting</strong> with GitHub Pages</h2>
+            <p>Sick of dealing with hosting companies? <a href="http://pages.github.com/">GitHub Pages</a> are <em>powered by Jekyll</em>, so you can easily deploy your site using GitHub for free&mdash;<a href="https://help.github.com/articles/setting-up-a-custom-domain-with-pages">custom domain name</a> and&nbsp;all.</p>
+            <a href="http://pages.github.com/" class="">Learn more about GitHub Pages &rarr;</a>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+</section>
