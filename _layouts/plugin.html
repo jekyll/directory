@@ -6,34 +6,8 @@ layout: page
 
 <p>{{ page.description }}</p>
 
-{% if page.type == "rubygems" %}
-
-<p>To install, add this to your <code>Gemfile</code>:</p>
-
-{% highlight ruby %}
-gem "{{ page.title }}"
-{% endhighlight %}
-
-<p>
-  and run <code>bundle install</code>. To use, run Jekyll with
-  <code>bundle exec</code> preceding it:
-</p>
-
-{% highlight bash %}
-$ bundle exec jekyll build
-$ bundle exec jekyll serve
-{% endhighlight %}
+{% include plugin-{{page.type}}-installation.html %}
 
 <p>
   <a href="{{ page.repository }}" title="{{ page.title }} on GitHub">Source code</a>
 </p>
-
-{% elsif page.type == "copy-and-paste" %}
-
-<p>
-  To install, you must copy the necessary files from <a href="{{ site.repository }}">the repository</a>
-  to your Jekyll site. Further installation instructions are available in the repository's
-  README.
-</p>
-
-{% endif %}
