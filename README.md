@@ -3,6 +3,8 @@ jekyllrb.com/plugins/
 
 Plugins discovery for Jekyll, built with Jekyll – A proposal.
 
+[![Build Status](https://travis-ci.org/jekyll/plugins.svg?branch=gh-pages)](https://travis-ci.org/jekyll/plugins)
+
 # NOTE: This is just a proposal and does not represent any functionality of Jekyll at present.
 
 ## Adding your plugin

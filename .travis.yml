@@ -11,3 +11,8 @@ script: script/cibuild
 
 notifications:
   email: false
+
+branches:
+  only:
+    - master
+    - gh-pages
