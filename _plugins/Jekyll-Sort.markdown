@@ -9,7 +9,7 @@ description: >
   the global site var for usage. If you have lists of hashes of hashes and
   you want to sort on something deeper than the first level, then you can
   edit this code.
-author: krazykylep
-git: git@github.com:krazykylep/Jekyll-Sort.git
-repository: https://github.com/krazykylep/Jekyll-Sort
+author: kylepaulsen
+git: git@github.com:kylepaulsen/Jekyll-Sort.git
+repository: https://github.com/kylepaulsen/Jekyll-Sort
 ---
