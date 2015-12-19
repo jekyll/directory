@@ -1,0 +1,18 @@
+---
+layout: page
+title: Plugins Index
+permalink: /index/
+---
+
+<ul>
+{% for plugin in site.plugins %}
+  <li>
+    <div>
+      <h4><a href="{{ plugin.url | prepend: site.baseurl }}" title="{{ plugin.title }}">{{ plugin.title }}</a></h4>
+      <p>
+        {{ plugin.description }}
+      </p>
+    </div>
+  </li>
+{% endfor %}
+</ul>
