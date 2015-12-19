@@ -2,9 +2,10 @@
 layout: page
 ---
 
-<h2><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a> by <a href="https://github.com/{{ page.author }}" title="{{ page.author }} on GitHub">{{ page.author }}</a></h2>
-
-<p>{{ page.description }}</p>
+<p>
+  {{ page.description }}
+  By <a href="https://github.com/{{ page.author }}" title="{{ page.author }} on GitHub">{{ page.author }}</a>.
+</p>
 
 {% include plugin-{{page.type}}-installation.html %}
 

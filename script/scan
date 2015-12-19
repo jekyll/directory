@@ -10,7 +10,6 @@ require 'pp'
 puts "Using Typhoeus v#{Typhoeus::VERSION}, Ethon v#{Ethon::VERSION}."
 
 proofer_opts = {
-  external_only: true,
   verbose:    ARGV.include?('--verbose') || ARGV.include?('-v'),
   typhoeus:   {
     ssl_verifypeer: !ARGV.include?('--no-ssl-verify')
@@ -22,7 +21,7 @@ pp proofer_opts
 puts
 
 begin
-  HTML::Proofer.new("./_site", proofer_opts).run
+  HTML::Proofer.new(File.join("tmp", "site"), proofer_opts).run
 rescue RuntimeError => e
   puts e
   abort

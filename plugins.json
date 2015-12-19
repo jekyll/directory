@@ -3,12 +3,12 @@ layout: null
 ---
 
 {
-    "plugins": [{% for post in site.posts %}
+    "plugins": [{% for plugin in site.plugins %}
     {
-        "title":       "{{ post.title }}",
-        "description": "{{ post.description }}",
-        "author":      "{{ post.author }}",
-        "repository":  "{{ post.repository }}"
+        "title":       "{{ plugin.title }}",
+        "description": "{{ plugin.description | strip_newlines }}",
+        "author":      "{{ plugin.author }}",
+        "repository":  "{{ plugin.repository }}"
     }{% if forloop.last %}{% else %},{% endif %}
     {% endfor %}
     ]
