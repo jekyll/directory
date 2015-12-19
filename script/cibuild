@@ -1,3 +1,3 @@
 #!/bin/bash
-script/bootstrap
 script/test
+script/scan
