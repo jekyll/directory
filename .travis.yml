@@ -8,10 +8,6 @@ cache: bundler
 sudo: false
 before_script: bundle update
 script: script/cibuild
-
-notifications:
-  email: false
-
 branches:
   only:
     - master
