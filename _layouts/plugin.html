@@ -1,0 +1,27 @@
+---
+layout: page
+---
+
+<h2><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a> by <a href="https://github.com/{{ page.author }}" title="{{ page.author }} on GitHub">{{ page.author }}</a></h2>
+
+<p>{{ page.description }}</p>
+
+<p>To install, add this to your <code>Gemfile</code>:</p>
+
+{% highlight ruby %}
+gem "{{ page.title }}"
+{% endhighlight %}
+
+<p>
+  and run <code>bundle install</code>. To use, run Jekyll with
+  <code>bundle exec</code> preceding it:
+</p>
+
+{% highlight bash %}
+$ bundle exec jekyll build
+$ bundle exec jekyll serve
+{% endhighlight %}
+
+<p>
+  <a href="{{ page.repository }}" title="{{ page.title }} on GitHub">Source code</a>
+</p>

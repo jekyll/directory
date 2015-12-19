@@ -7,7 +7,7 @@ overview: true
 <section class="intro">
   <div class="grid">
     <div class="unit whole center-on-mobiles">
-      <p class="first">Import your old &amp; busted site or blog for use with Jekyll.</p>
+      <p class="first">Community-built plugins to level up your Jekyll experience.</p>
     </div>
   </div>
 </section>
@@ -17,8 +17,8 @@ overview: true
       <h2>Wide Range of Available Importers</h2>
       <p>
         <div class="grid">
-            {% for importer in site.importers %}
-            <div class="unit w-1-4 center-on-mobiles"><a href="{{ importer.url }}" title="{{ importer.title }} Importer">{{ importer.title }}</a></div>
+            {% for plugins in site.plugins reversed limit:10 %}
+            <div class="unit w-1-4 center-on-mobiles"><a href="{{ plugins.url | prepend: site.baseurl }}" title="{{ plugins.title }}">{{ plugins.title }}</a></div>
             {% endfor %}
         </div>
       </p>
@@ -26,12 +26,12 @@ overview: true
     <div class="unit one-third">
       <h2>Open-Source</h2>
       <p>
-        No importer for your system? No problem. Creating one is easy.
+        Did you create a plugin you would like to share?
       </p>
       <p>
-        Found a problem with the importer? File an issue.
+        Submit a pull request with the required data and
       </p>
-      <a href="/docs/home/" class="">How to Contribute &rarr;</a>
+      <a href="{{ site.repository }}/blob/master/CONTRIBUTING.md" class="">How to Contribute &rarr;</a>
     </div>
     <div class="clear"></div>
   </div>

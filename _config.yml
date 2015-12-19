@@ -1,13 +1,15 @@
-title: "jekyll-import • Import your old &amp; busted site to Jekyll"
-highlighter: pygments
-relative_permalinks: false
-permalink: /news/:year/:month/:day/:title/
-excerpt_separator: ""
-repository: https://github.com/jekyll/jekyll-import
-latest_release: 0.7.1
+title: "Jekyll Plugins • "
+repository: https://github.com/jekyll/plugins
 
 collections:
-  docs:
+  plugins:
     output: true
-  importers:
-    output: true
+    permalink: /:title/
+
+exclude:
+  - vendor
+  - Gemfile*
+  - Rakefile
+  - README.md
+  - spec
+  - script

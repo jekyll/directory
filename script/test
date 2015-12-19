@@ -1,2 +1,4 @@
 #!/bin/sh
-script/test
+set -e
+bundle exec rspec --format progress --color
+bundle exec jekyll build
