@@ -20,7 +20,6 @@ permalink: /feed.xml
     <entry xml:lang="en_US">
       <title type="html">{{ post.title | smartify | strip_html | replace: '\n', ' ' | strip | xml_escape }}</title>
       <link href="{{ post.url | absolute_url }}" rel="alternate" type="text/html" title="{{ post.title | xml_escape }}" />
-      <published>{{ post.last_modified_at | default:post.date | date_to_xmlschema }}</published>
       <id>{{ post.url | absolute_url }}</id>
       <content type="html" xml:base="{{ post.url | absolute_url }}">{{ post.description | strip | xml_escape }}</content>
 
