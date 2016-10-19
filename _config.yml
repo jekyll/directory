@@ -1,6 +1,8 @@
 title: "Jekyll Plugins • Community-built plugins to level up your Jekyll experience."
 repository: https://github.com/jekyll/plugins
+url: http://jekyll.github.io
 baseurl: /plugins
+lang: "en_US"
 
 gems:
     - jekyll-sitemap
