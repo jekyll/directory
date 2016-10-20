@@ -9,8 +9,6 @@ layout: null
         "description": "{{ plugin.description | strip_newlines }}",
         "author":      "{{ plugin.author }}",
         "repository":  "{{ plugin.repository }}"
-    }{% if forloop.last %}{% else %},{% endif %}
-    {% endfor %}
+    }{% unless forloop.last %},{% endunless %}{% endfor %}
     ]
 }
-
