@@ -2,6 +2,9 @@ title: "Jekyll Plugins • Community-built plugins to level up your Jekyll exper
 repository: https://github.com/jekyll/plugins
 baseurl: /plugins
 
+gems:
+    - jekyll-sitemap
+
 collections:
   plugins:
     output: true
