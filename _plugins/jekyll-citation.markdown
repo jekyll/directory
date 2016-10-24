@@ -1,5 +1,4 @@
 ---
-layout: plugin
 type: copy-and-paste
 title: jekyll-citation
 description: Jekyll plugin to parse/render BibTeX-encoded citations included in posts/pages

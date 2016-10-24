@@ -1,6 +1,4 @@
 ---
-layout: plugin
-type: rubygems
 title: rust_playground_highlight
 description: Automatically add links to the Rust Playground for code samples in your Jekyll site
 author: IanWhitney

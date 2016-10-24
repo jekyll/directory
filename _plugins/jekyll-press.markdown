@@ -1,6 +1,4 @@
 ---
-layout: plugin
-type: rubygems
 title: jekyll-press
 description: >
   Minifier plugin for jekyll. Minifies all html, js, css files. Simple just

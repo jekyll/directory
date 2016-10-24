@@ -1,5 +1,4 @@
 ---
-layout: plugin
 type: copy-and-paste
 title: jekyll-js-minify-plugin
 description: >

@@ -1,5 +1,4 @@
 ---
-layout: plugin
 type: copy-and-paste
 title: Jekyll-Dribbble-Set-Tag
 description:  Generates image galleries from player's recent shots with customizable shots per page and which page of results to render.

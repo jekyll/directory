@@ -1,5 +1,4 @@
 ---
-layout: plugin
 type: copy-and-paste
 title: jekyll-vimeo-plugin
 description: This plugin makes it easy to embed videos from Vimeo by using a simple Liquid tag

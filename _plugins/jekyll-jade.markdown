@@ -1,5 +1,4 @@
 ---
-layout: plugin
 type: copy-and-paste
 title: jekyll-jade
 description: Converter Plugin that brings Jade support to Jekyll

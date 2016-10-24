@@ -1,5 +1,4 @@
 ---
-layout: plugin
 type: copy-and-paste
 title: jekyll_flickr_set_tag
 description: Generates image galleries from a Flickr set.

@@ -1,5 +1,4 @@
 ---
-layout: plugin
 type: copy-and-paste
 title: jekyll-thumbnailer
 description: Generates a thumbnail to an image and renders an image tag.

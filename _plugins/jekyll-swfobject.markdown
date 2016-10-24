@@ -1,6 +1,4 @@
 ---
-layout: plugin
-type: rubygems
 title: jekyll-swfobject
 description: >
   SWFObject Tag is a Liquid plugin for Jekyll to embed Flash files (*.swf)

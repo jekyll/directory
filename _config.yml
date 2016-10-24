@@ -5,7 +5,9 @@ baseurl: /plugins
 collections:
   plugins:
     output: true
-    permalink: /:title/
+    permalink: /plugins/:title/ # DO NOT CHANGE THIS DEFAULT
+    layout: plugin              # DO NOT CHANGE THIS DEFAULT
+    type: rubygems              # DO NOT CHANGE THIS DEFAULT
 
 exclude:
   - vendor
