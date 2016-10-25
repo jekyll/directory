@@ -1,6 +1,4 @@
 ---
-layout: plugin
-type: rubygems
 title: jekyll-tagging
 description: >
   jekyll-tagging is a Jekyll plugin, to add a tag cloud and per tag pages

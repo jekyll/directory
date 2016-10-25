@@ -1,5 +1,4 @@
 ---
-layout: plugin
 type: copy-and-paste
 title: jekyll-author-plugin
 description: A Jekyll plugin for generating author archives for posts

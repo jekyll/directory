@@ -1,6 +1,4 @@
 ---
-layout: plugin
-type: rubygems
 title: jekyll-scholar
 description: >
   Jekyll-Scholar is for all the academic bloggers out there. It is a set of

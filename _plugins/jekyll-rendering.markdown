@@ -1,6 +1,4 @@
 ---
-layout: plugin
-type: rubygems
 title: jekyll-rendering
 description: Jekyll plugin to provide alternative rendering engines.
 author: blackwinter

@@ -1,5 +1,4 @@
 ---
-layout: plugin
 type: copy-and-paste
 title: jekyll-asset_bundler
 description: A small plugin for Jekyll to easily bundle and compress site assets

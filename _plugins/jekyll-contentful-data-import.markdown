@@ -1,6 +1,4 @@
 ---
-layout: plugin
-type: rubygems
 title: jekyll-contentful-data-import
 description: >
   Jekyll-Contentful-Data-Import is a Jekyll extension to use the Jekyll static

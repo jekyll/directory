@@ -1,5 +1,4 @@
 ---
-layout: plugin
 type: copy-and-paste
 title: Domain Name Liquid Filter
 description: A Liquid Filter to display the domain name of a url.

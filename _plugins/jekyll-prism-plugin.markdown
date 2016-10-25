@@ -1,6 +1,4 @@
 ---
-layout: plugin
-type: rubygems
 title: jekyll-prism-plugin
 description: >
   The Jekyll Prism plugin is a replacement for native Pygments syntax

@@ -1,6 +1,4 @@
 ---
-layout: plugin
-type: rubygems
 title: jekyll-pagination
 description: Jekyll plugin to extend the pagination generator
 author: blackwinter

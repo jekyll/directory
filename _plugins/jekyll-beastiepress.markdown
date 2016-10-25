@@ -1,6 +1,4 @@
 ---
-layout: plugin
-type: rubygems
 title: jekyll-beastiepress
 description: >
   These Jekyll plugins add port, pr, and man tags through Liquid, making it

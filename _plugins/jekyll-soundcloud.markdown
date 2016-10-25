@@ -1,5 +1,4 @@
 ---
-layout: plugin
 type: copy-and-paste
 title: jekyll-soundcloud
 description: A Jekyll plug-in for embedding SoundCloud sounds in your Liquid templates.

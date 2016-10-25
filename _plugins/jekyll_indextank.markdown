@@ -1,5 +1,4 @@
 ---
-layout: plugin
 type: copy-and-paste
 title: jekyll_indextank
 description: Jekyll + indextank = Static websites with powerful full-text search
