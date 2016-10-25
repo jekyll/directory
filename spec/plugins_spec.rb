@@ -1,11 +1,11 @@
 require 'spec_helper'
 
 PLUGIN_TYPES = %w{
-  copy-and-paste rubygems command
-}
+  copy-and-paste command
+} << nil
 
 required_fields = %w{
-  layout title description author git repository type
+  title description author git repository
 }
 
 describe("plugin manifests") do
