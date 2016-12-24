@@ -19,5 +19,7 @@ exclude:
   - Gemfile*
   - Rakefile
   - README.md
+  - CONTRIBUTING.md
+  - History.markdown
   - spec
   - script
