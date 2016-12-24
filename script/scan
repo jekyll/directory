@@ -4,7 +4,7 @@ trap("SIGINT") { exit! }
 
 require 'bundler'
 Bundler.setup
-require 'html/proofer'
+require 'html-proofer'
 require 'pp'
 
 puts "Using Typhoeus v#{Typhoeus::VERSION}, Ethon v#{Ethon::VERSION}."
@@ -21,7 +21,7 @@ pp proofer_opts
 puts
 
 begin
-  HTML::Proofer.new(File.join("tmp", "site"), proofer_opts).run
+  HTMLProofer.check_directory(File.join("tmp", "site"), proofer_opts).run
 rescue RuntimeError => e
   puts e
   abort
