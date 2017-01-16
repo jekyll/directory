@@ -8,9 +8,9 @@ required_fields = %w{
   title description author git repository
 }
 
-describe("plugin manifests") do
-  Dir["_plugins/*"].each do |plugin|
-    plugin_info = SafeYAML.load_file(plugin)
+Dir["_plugins/*"].each do |plugin|
+  plugin_info = SafeYAML.load_file(plugin)
+  describe(plugin) do
 
     context File.basename(plugin, ".*") do
       required_fields.each do |field|
@@ -22,6 +22,12 @@ describe("plugin manifests") do
 
       it "complies with the accepted types" do
         expect(PLUGIN_TYPES).to include(plugin_info["type"])
+      end
+
+      if plugin_info["type"].nil?
+        it "is a gem" do
+          expect(plugin_info["title"]).to be_avaliable_on_rubygems
+        end
       end
     end
 
