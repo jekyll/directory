@@ -16,8 +16,8 @@ overview: true
       <h2>Wide Range of Available Plugins</h2>
       <p>
         <div class="grid">
-            {% for plugins in site.plugins reversed limit:10 %}
-            <div class="unit w-1-4 center-on-mobiles"><a href="{{ plugins.url | prepend: site.baseurl }}" title="{{ plugins.title }}">{{ plugins.title }}</a></div>
+            {% for plugins in site.plugins reversed limit:30 %}
+            <div class="unit half center-on-mobiles"><a href="{{ plugins.url | prepend: site.baseurl }}" title="{{ plugins.title }}">{{ plugins.title }}</a></div>
             {% endfor %}
         </div>
       </p>
