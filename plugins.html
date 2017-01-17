@@ -10,7 +10,7 @@ permalink: /plugins/
     <div>
       <h4><a href="{{ plugin.url | prepend: site.baseurl }}" title="{{ plugin.title }}">{{ plugin.title }}</a></h4>
       <p>
-        {{ plugin.description }}
+        {{ plugin.description | markdownify }}
       </p>
     </div>
   </li>
