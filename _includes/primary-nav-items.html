@@ -3,7 +3,10 @@
     <a href="{{ site.url | append: site.baseurl }}/">Overview</a>
   </li>
   <li class="{% if page.url contains '/plugins/' %}current{% endif %}">
-    <a href="{{ site.url | append: site.baseurl }}/plugins/">Index</span></a>
+    <a href="{{ site.url | append: site.baseurl }}/plugins/">Plugins</span></a>
+  </li>
+  <li class="{% if page.url contains '/themes/' %}current{% endif %}">
+    <a href="{{ site.url | append: site.baseurl }}/themes/">Themes</span></a>
   </li>
   <li class="">
     <a href="{{ site.repository }}"><span class="hide-on-mobiles">View on </span>GitHub</a>
