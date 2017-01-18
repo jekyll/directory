@@ -1,0 +1,19 @@
+---
+layout: page
+---
+
+<p>
+  By <a href="https://github.com/{{ page.author }}" title="{{ page.author }} on GitHub">{{ page.author }}</a>.
+</p>
+
+{{ page.description | markdownify }}
+
+{% if page.github_pages %}
+  Available on GitHub Pages
+{% endif  %}
+
+{% include theme-{{page.type}}-installation.html %}
+
+<p>
+  <a href="{{ page.repository }}" title="{{ page.title }} on GitHub">Source code</a>
+</p>

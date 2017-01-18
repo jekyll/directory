@@ -1,0 +1,18 @@
+---
+layout: page
+title: Themes directory
+permalink: /themes/
+---
+
+<ul>
+{% for theme in site.themes %}
+  <li>
+    <div>
+      <h4><a href="{{ theme.url | prepend: site.baseurl }}" title="{{ theme.title }}">{{ theme.title }}</a></h4>
+      <p>
+        {{ theme.description }}
+      </p>
+    </div>
+  </li>
+{% endfor %}
+</ul>

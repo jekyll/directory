@@ -5,33 +5,37 @@ overview: true
 
 <section class="intro">
   <div class="grid">
-    <div class="unit whole center-on-mobiles">
-      <p class="first">Community-built plugins to level up your Jekyll experience.</p>
-    </div>
+      <div class="unit whole center-on-mobiles">
+          <p class="first">Community-built resources to level up your Jekyll experience.</p>
+      </div>
   </div>
 </section>
 <section class="features">
   <div class="grid">
-    <div class="unit two-thirds">
-      <h2>Wide Range of Available Plugins</h2>
-      <p>
-        <div class="grid">
-            {% for plugins in site.plugins reversed limit:30 %}
-            <div class="unit half center-on-mobiles"><a href="{{ plugins.url | prepend: site.baseurl }}" title="{{ plugins.title }}">{{ plugins.title }}</a></div>
-            {% endfor %}
-        </div>
-      </p>
+    <div class="unit whole">
+      <h2><a href="{{ "/plugins/" | prepend: site.baseurl }}">Plugins</a></h2>
+      <div class="grid">
+      {% for plugins in site.plugins reversed limit:20 %}
+        <div class="unit half"><a href="{{ plugins.url | prepend: site.baseurl }}" title="{{ plugins.title }}">{{ plugins.title }}</a></div>
+      {% endfor %}
+      </div>
     </div>
-    <div class="unit one-third">
-      <h2>Open-Source</h2>
-      <p>
-        Did you create a plugin you would like to share?
-      </p>
-      <p>
-        Submit a pull request with the required data and
-      </p>
-      <a href="{{ site.repository }}/blob/master/CONTRIBUTING.md" class="">How to Contribute &rarr;</a>
+    <div class="grid">
+      <div class="unit whole">
+        <h2><a href="{{ "/themes/" | prepend: site.baseurl }}">Themes</a></h2>
+        <div class="grid">
+          {% for themes in site.themes reversed limit:10 %}
+            <div class="unit half"><a href="{{ themes.url | prepend: site.baseurl }}" title="{{ themes.title }}">{{ themes.title }}</a></div>
+          {% endfor %}
+        </div>
     </div>
     <div class="clear"></div>
+    <div class="grid">
+      <div class="unit whole">
+        <h2>Open-Source</h2>
+          <p>Did you create a theme or a plugin you would like to share? Submit a pull-request.</p>
+          <p><a href="{{ site.repository }}/blob/master/CONTRIBUTING.md" class="">Contribute &rarr;</a></p>
+      </div>
+    </div>
   </div>
 </section>

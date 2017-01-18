@@ -1,0 +1,14 @@
+---
+layout: null
+---
+
+{
+    "themes": [{% for theme in site.themes %}
+    {
+        "title":       "{{ theme.title }}",
+        "description": "{{ theme.description | strip_newlines }}",
+        "author":      "{{ theme.author }}",
+        "repository":  "{{ theme.repository }}"
+    }{% unless forloop.last %},{% endunless %}{% endfor %}
+    ]
+}
