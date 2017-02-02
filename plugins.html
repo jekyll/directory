@@ -9,9 +9,9 @@ permalink: /plugins/
   <li>
     <div>
       <h4><a href="{{ plugin.url | prepend: site.baseurl }}" title="{{ plugin.title }}">{{ plugin.title }}</a></h4>
-      <p>
-        {{ plugin.description }}
-      </p>
+
+      {{ plugin.description | markdownify }}
+
     </div>
   </li>
 {% endfor %}

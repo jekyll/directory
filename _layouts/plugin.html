@@ -3,9 +3,10 @@ layout: page
 ---
 
 <p>
-  {{ page.description }}
-  By <a href="https://github.com/{{ page.author }}" title="{{ page.author }} on GitHub">{{ page.author }}</a>.
+  By <a href="https://github.com/{{ page.author }}" title="{{ page.author }} on GitHub">{{ page.author }}</a>
 </p>
+
+  {{ page.description | markdownify }}
 
 {% include plugin-{{page.type}}-installation.html %}
 
