@@ -8,7 +8,7 @@ layout: page
 
   {{ page.description | markdownify }}
 
-  {% if page.github_pages %}<strong>Compatible with GitHub Pages</strong>{% endif %}
+  {% if site.data.github_pages.plugins contains page.title %}<strong>Compatible with GitHub Pages</strong>{% endif %}
 
 {% include plugin-{{page.type}}-installation.html %}
 

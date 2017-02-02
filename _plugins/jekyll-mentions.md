@@ -4,7 +4,6 @@ description: >
   👥 GitHub @mention support for your Jekyll site.
 author: jekyll
 compatible: v3
-github_pages: true
 git: git@github.com:jekyll/jekyll-mentions.git
 repository: https://github.com/jekyll/jekyll-mentions
 ---

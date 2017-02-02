@@ -12,7 +12,7 @@ permalink: /plugins/
 
       {{ plugin.description | markdownify }}
 
-      {% if plugin.github_pages %}<strong>Compatible with GitHub Pages</strong> :octocat:{% endif %}
+      {% if site.data.github_pages.plugins contains plugin.title %}<strong>Compatible with GitHub Pages</strong> :octocat:{% endif %}
 
     </div>
   </li>

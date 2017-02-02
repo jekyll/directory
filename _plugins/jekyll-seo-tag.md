@@ -5,7 +5,6 @@ description: >
   to better index and display your site's content.
 author: benbalter
 compatible: v3
-github_pages: true
 git: git@github.com:jekyll/jekyll-seo-tag.git
 repository: https://github.com/jekyll/jekyll-seo-tag
 ---
