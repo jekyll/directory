@@ -5,3 +5,4 @@
   * Rendering (#30)
   * Add jekyll/plugins (#29)
   * add jekyll-cloudinary (#32)
+  * add algolia-search plugin (#31)
