@@ -6,3 +6,4 @@
   * Add jekyll/plugins (#29)
   * add jekyll-cloudinary (#32)
   * add algolia-search plugin (#31)
+  * Check that gems exist (#28)
