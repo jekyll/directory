@@ -12,6 +12,8 @@ permalink: /plugins/
 
       {{ plugin.description | markdownify }}
 
+      {% if plugin.github_pages %}<strong>Compatible with GitHub Pages</strong> :octocat:{% endif %}
+
     </div>
   </li>
 {% endfor %}
