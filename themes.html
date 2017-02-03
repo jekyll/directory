@@ -12,6 +12,11 @@ permalink: /themes/
       <p>
         {{ theme.description }}
       </p>
+      {% if site.data.github_pages.themes contains theme.title %}
+        <p>
+          <strong>Supported on GitHub Pages</strong>
+        </p>
+      {% endif %}
     </div>
   </li>
 {% endfor %}

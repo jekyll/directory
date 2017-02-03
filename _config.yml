@@ -26,7 +26,7 @@ defaults:
       type: themes
     values:
       permalink: /themes/:title/  # DO NOT CHANGE THIS DEFAULT
-      layout: plugin              # DO NOT CHANGE THIS DEFAULT
+      layout: theme               # DO NOT CHANGE THIS DEFAULT
       type: rubygems              # DO NOT CHANGE THIS DEFAULT
 
 exclude:

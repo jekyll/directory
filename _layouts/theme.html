@@ -3,14 +3,12 @@ layout: page
 ---
 
 <p>
-  By <a href="https://github.com/{{ page.author }}" title="{{ page.author }} on GitHub">{{ page.author }}</a>.
+  By <a href="https://github.com/{{ page.author }}" title="{{ page.author }} on GitHub">{{ page.author }}</a>
 </p>
 
 {{ page.description | markdownify }}
 
-{% if page.github_pages %}
-  Available on GitHub Pages
-{% endif  %}
+{% if site.data.github_pages.themes contains page.title %}<strong>Supported on GitHub Pages</strong>{% endif %}
 
 {% include theme-{{page.type}}-installation.html %}
 
