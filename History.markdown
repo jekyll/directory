@@ -8,3 +8,4 @@
   * add algolia-search plugin (#31)
   * Check that gems exist (#28)
   * Ignore edit link urls in html-proofer (#37)
+  * Mention Github Pages support and compatibility (#36)
