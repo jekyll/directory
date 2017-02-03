@@ -6,11 +6,17 @@ layout: page
   By <a href="https://github.com/{{ page.author }}" title="{{ page.author }} on GitHub">{{ page.author }}</a>
 </p>
 
+<figure>
+  <img class="theme-thumbnail" src="{{ site.baseurl }}/img/themes/{{page.title}}.png" alt="" />
+</figure>
+
 {{ page.description | markdownify }}
 
-{% if site.data.github_pages.themes contains page.title %}<strong>Supported on GitHub Pages</strong>{% endif %}
-
 {% include theme-{{page.type}}-installation.html %}
+
+<div class="note info">
+  {% if site.data.github_pages.themes contains page.title %}<strong>Supported on GitHub Pages</strong>{% endif %}
+</div>
 
 <p>
   <a href="{{ page.repository }}" title="{{ page.title }} on GitHub">Source code</a>

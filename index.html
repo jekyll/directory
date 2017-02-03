@@ -16,18 +16,24 @@ overview: true
       <h2><a href="{{ "/plugins/" | prepend: site.baseurl }}">Plugins</a></h2>
       <div class="grid">
       {% for plugins in site.plugins reversed limit:20 %}
-        <div class="unit half"><a href="{{ plugins.url | prepend: site.baseurl }}" title="{{ plugins.title }}">{{ plugins.title }}</a></div>
+        <div class="unit half">
+          <a href="{{ plugins.url | prepend: site.baseurl }}" title="{{ plugins.title }}">{{ plugins.title }}</a>
+        </div>
       {% endfor %}
       </div>
     </div>
     <div class="grid">
-      <div class="unit whole">
+      <div class="unit whole center-on-mobiles">
         <h2><a href="{{ "/themes/" | prepend: site.baseurl }}">Themes</a></h2>
-        <div class="grid">
-          {% for themes in site.themes reversed limit:10 %}
-            <div class="unit half"><a href="{{ themes.url | prepend: site.baseurl }}" title="{{ themes.title }}">{{ themes.title }}</a></div>
+        <div class="grid themes">
+          {% for theme in site.themes limit:10 %}
+            <div class="unit half align-center" style="padding:10px">
+              <a href="{{ theme.url | prepend: site.baseurl }}" title="{{ theme.title }}"><img class="theme-thumbnail" src="img/themes/{{ theme.title }}.png" alt=""></a>
+              <h3><a href="{{ theme.url | prepend: site.baseurl }}" title="{{ theme.title }}">{{ theme.title }}</a></h3>
+            </div>
           {% endfor %}
         </div>
+        <div class="clear"></div>
     </div>
     <div class="clear"></div>
     <div class="grid">

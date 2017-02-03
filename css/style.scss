@@ -954,4 +954,14 @@ code.option, code.flag, code.filter, code.output {
   }
 }
 
+/* Themes */
+
+.themes {
+  line-height: 2em
+}
+
+.theme-thumbnail {
+  max-width: 100%;
+}
+
 @import "pygments";
