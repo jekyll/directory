@@ -7,3 +7,4 @@
   * add jekyll-cloudinary (#32)
   * add algolia-search plugin (#31)
   * Check that gems exist (#28)
+  * Ignore edit link urls in html-proofer (#37)
