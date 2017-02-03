@@ -5,8 +5,8 @@ baseurl: /directory
 lang: "en_US"
 
 gems:
-    - jekyll-sitemap
-    - jemoji
+  - jekyll-sitemap
+  - jemoji
 
 collections:
   plugins:
