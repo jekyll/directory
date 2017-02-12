@@ -27,8 +27,8 @@
 .grid .unit:first-child { padding-left: 20px; }
 .grid .unit:last-child { padding-right: 20px; }
 
-/* Nested grids already have padding though, so let’s nuke it */
-.unit .unit:nth-child(2n+1) { padding-left: 0; }
+/* Nested grids already have padding though, so let's nuke it */
+.unit .unit:first-child { padding-left: 0; }
 .unit .unit:last-child { padding-right: 0; }
 .unit .grid:first-child > .unit { padding-top: 0; }
 .unit .grid:last-child > .unit { padding-bottom: 0; }
@@ -62,12 +62,37 @@
 .grid .golden-small,   .grid .w-g-s { width: 38.2716%; } /* Golden section: smaller piece */
 .grid .golden-large,   .grid .w-g-l { width: 61.7283%; } /* Golden section: larger piece */
 
+/* Clearfix after every .grid */
+.grid {
+  *zoom: 1;
+}
+.grid:before, .grid:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.grid:after {
+  clear: both;
+}
+
 /* Utility classes */
 .align-center { text-align: center; }
 .align-left   { text-align: left; }
 .align-right  { text-align: right; }
 .pull-left    { float: left; }
 .pull-right   { float: right; }
+
+/* A property for a better rendering of images in units: in
+   this way bigger pictures are just resized if the unit
+   becomes smaller */
+.unit img {
+  max-width: 100%;
+}
+
+/* Hide elements using this class by default */
+.only-on-mobiles {
+  display: none !important;
+}
 
 .show-on-mobiles {
   display: none;
@@ -76,7 +101,7 @@
 /* Responsive Stuff */
 @media screen and (max-width: 568px) {
   /* Stack anything that isn’t full-width on smaller screens */
-  .grid .unit {
+  .grid:not(.no-stacking-on-mobiles) > .unit {
     width: 100% !important;
     padding-left: 20px;
     padding-right: 20px;
@@ -93,6 +118,7 @@
   .hide-on-mobiles {
     display: none !important;
   }
+  .only-on-mobiles,
   .show-on-mobiles {
     display: block !important;
   }
@@ -102,9 +128,10 @@
 }
 
 /* Expand the wrap a bit further on larger screens */
-/*@media screen and (min-width: 1180px) {
-  .wrap .grid {
+@media screen and (min-width: 1180px) {
+  .wider .grid,
+  .grid.wider {
     max-width: 1180px;
     margin: 0 auto;
   }
-}*/
+}
