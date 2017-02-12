@@ -1,41 +1,59 @@
 ---
 layout: default
+title: Overview
 overview: true
 ---
 
 <section class="intro">
   <div class="grid">
       <div class="unit whole center-on-mobiles">
-          <p class="first">Community-built resources to level up your Jekyll experience.</p>
+          <p class="first">{{ site.description }}</p>
       </div>
   </div>
 </section>
-<section class="features">
+<section class="features {{ page.title | slugify }}">
   <div class="grid">
-    <div class="unit whole">
-      <h2><a href="{{ "/plugins/" | prepend: site.baseurl }}">Plugins</a></h2>
-      <div class="grid">
-      {% for plugins in site.plugins reversed limit:20 %}
-        <div class="unit half">
+    <div class="unit whole center-on-mobiles">
+      <h2>Plugins</h2>
+      {% for plugins in site.plugins reversed limit:30 %}
+      {% capture modulo %}{{ forloop.index0 | modulo:3 }}{% endcapture %}
+      {% if modulo == '0' or forloop.first %}
+        <div class="grid">
+      {% endif %}
+        <div class="unit one-third">
           <a href="{{ plugins.url | prepend: site.baseurl }}" title="{{ plugins.title }}">{{ plugins.title }}</a>
         </div>
+      {% if modulo == '2' or forloop.last %}
+        </div>
+      {% endif %}
+      {% if forloop.last %}
+      <p class="call-to-action align-center">
+       <a href="{{ "/plugins/" | prepend: site.baseurl }}">Browse all plugins →</a>
+      </p>
+      {% endif %}
       {% endfor %}
-      </div>
     </div>
     <div class="grid">
       <div class="unit whole center-on-mobiles">
-        <h2><a href="{{ "/themes/" | prepend: site.baseurl }}">Themes</a></h2>
-        <div class="grid themes">
-          {% for theme in site.themes limit:10 %}
-            <div class="unit half align-center" style="padding:10px">
-              <a href="{{ theme.url | prepend: site.baseurl }}" title="{{ theme.title }}"><img class="theme-thumbnail" src="img/themes/{{ theme.title }}.png" alt=""></a>
-              <h3><a href="{{ theme.url | prepend: site.baseurl }}" title="{{ theme.title }}">{{ theme.title }}</a></h3>
+        <h2>Themes</h2>
+          {% for theme in site.themes limit:12 %}
+          {% capture modulo %}{{ forloop.index0 | modulo:3 }}{% endcapture %}
+          {% if modulo == '0' or forloop.first %}
+            <div class="grid themes">
+          {% endif %}
+          <div class="unit one-third align-center">
+            <a href="{{ theme.url | prepend: site.baseurl }}" title="{{ theme.title }}"><img class="theme-thumbnail" src="img/themes/thumbnails/{{ theme.title }}.jpg" alt=""></a>
+            <h3 class="theme-title"><a href="{{ theme.url | prepend: site.baseurl }}" title="{{ theme.title }}">{{ theme.title }}</a></h3>
+          </div>
+          {% if modulo == '2' or forloop.last %}
             </div>
+          {% endif %}
           {% endfor %}
+          <p class="call-to-action align-center">
+            <a href="{{ "/themes/" | prepend: site.baseurl }}">Browse all themes →</a>
+          </p>
         </div>
-        <div class="clear"></div>
     </div>
-    <div class="clear"></div>
     <div class="grid">
       <div class="unit whole">
         <h2>Open-Source</h2>

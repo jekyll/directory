@@ -7,16 +7,18 @@ layout: page
 </p>
 
 <figure>
-  <img class="theme-thumbnail" src="{{ site.baseurl }}/img/themes/{{page.title}}.png" alt="" />
+  <img class="theme-thumbnail" src="{{ site.baseurl }}/img/themes/screenshots/{{page.title}}.jpg" alt="" />
 </figure>
 
 {{ page.description | markdownify }}
 
 {% include theme-{{page.type}}-installation.html %}
 
-<div class="note info">
-  {% if site.data.github_pages.themes contains page.title %}<strong>Supported on GitHub Pages</strong>{% endif %}
-</div>
+{% if site.data.github_pages.themes contains page.title %}
+  <div class="note info">
+    <strong>Supported on GitHub Pages</strong>
+  </div>
+{% endif %}
 
 <p>
   <a href="{{ page.repository }}" title="{{ page.title }} on GitHub">Source code</a>

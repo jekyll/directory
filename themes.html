@@ -4,17 +4,15 @@ title: Themes directory
 permalink: /themes/
 ---
 
-<div class="grid">
-  {% for theme in site.themes %}
-    <div class="unit half">
-      <h2><a href="{{ theme.url | prepend: site.baseurl }}" title="{{ theme.title }}">{{ theme.title }}</a></h2>
-      {{ theme.description | markdownify }}
-    </div>
-    <div class="unit half">
-      <img class="theme-thumbnail" src="{{ site.baseurl }}/img/themes/{{ theme.title }}.png" alt=""/>{{ themes.title }}
-    </div>
-    {% if forloop.last %}
-     <div class="clear"></div>
-    {% endif %}
-  {% endfor %}
+
+{% for theme in site.themes %}
+<div class="grid {{ page.title | slugify }} center-on-mobiles">
+  <div class="unit half">
+    <img class="theme-thumbnail" src="{{ site.baseurl }}/img/themes/{{ theme.title }}.jpg" alt=""/>
+  </div>
+  <div class="unit half">
+    <h2 class="theme-title"><a href="{{ theme.url | prepend: site.baseurl }}" title="{{ theme.title }}">{{ theme.title }}</a></h2>
+    {{ theme.description | markdownify }}
+  </div>
 </div>
+{% endfor %}
