@@ -1,6 +1,10 @@
 source "https://rubygems.org"
 
-gem "gems"
 gem "github-pages"
-gem "html-proofer"
-gem "rspec"
+
+group :test do
+  gem "gems"
+  gem "html-proofer"
+  gem "rspec"
+  gem "rubocop", "~> 0.4"
+end
