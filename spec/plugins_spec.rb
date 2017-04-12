@@ -1,17 +1,16 @@
-require 'spec_helper'
+require "spec_helper"
 
-PLUGIN_TYPES = %w{
+PLUGIN_TYPES = %w(
   copy-and-paste command
-} << nil
+) << nil
 
-required_fields = %w{
+required_fields = %w(
   title description author git repository
-}
+)
 
 Dir["_plugins/*"].each do |plugin|
   plugin_info = SafeYAML.load_file(plugin)
   describe(plugin) do
-
     context File.basename(plugin, ".*") do
       required_fields.each do |field|
         it "contains the #{field}" do
@@ -30,6 +29,5 @@ Dir["_plugins/*"].each do |plugin|
         end
       end
     end
-
   end
 end

@@ -2,19 +2,19 @@
 
 trap("SIGINT") { exit! }
 
-require 'bundler'
+require "bundler"
 Bundler.setup
-require 'html-proofer'
-require 'pp'
+require "html-proofer"
+require "pp"
 
 puts "Using Typhoeus v#{Typhoeus::VERSION}, Ethon v#{Ethon::VERSION}."
 
 proofer_opts = {
-  verbose:    ARGV.include?('--verbose') || ARGV.include?('-v'),
-  url_ignore: [%r!https://github.com/jekyll/plugins/edit/master/_plugins/*!],
-  typhoeus:   {
-    ssl_verifypeer: !ARGV.include?('--no-ssl-verify')
-  }
+  :verbose    => ARGV.include?("--verbose") || ARGV.include?("-v"),
+  :url_ignore => [%r!https://github.com/jekyll/plugins/edit/master/_plugins/*!],
+  :typhoeus   => {
+    :ssl_verifypeer => !ARGV.include?("--no-ssl-verify"),
+  },
 }
 
 puts "Using options:"
