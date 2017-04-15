@@ -1,7 +1,7 @@
 ---
 type: copy-and-paste
 title: jekyll-tweet-tag
-description: >
+description: |
   This is a simple Liquid tag that makes it easy to embed tweets. This is
   great for quoting a tweet in a blog post, for example. It uses Twitter's
   oEmbed API for their Embedded Tweet feature. Features include:
