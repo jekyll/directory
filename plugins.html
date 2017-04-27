@@ -4,17 +4,18 @@ title: Plugins Index
 permalink: /plugins/
 ---
 
-<ul>
 {% for plugin in site.plugins %}
-  <li>
-    <div>
-      <h4><a href="{{ plugin.url | prepend: site.baseurl }}" title="{{ plugin.title }}">{{ plugin.title }}</a></h4>
-
-      {{ plugin.description | markdownify }}
-
-      {% if site.data.github_pages.plugins contains plugin.title %}<strong>Compatible with GitHub Pages</strong> :octocat:{% endif %}
-
-    </div>
-  </li>
+<div class="plugin-item">
+  <header>
+    <h4>
+      <a href="{{ plugin.url | relative_url }}" title="{{ plugin.title }}">{{ plugin.title }}</a>
+      {% if site.data.github_pages.plugins contains plugin.title %}
+        <span class="gh-label">Compatible with GitHub Pages</span>
+      {% endif %}
+    </h4>
+  </header>
+  <div>
+    {{ plugin.description | markdownify }}
+  </div>
+</div>
 {% endfor %}
-</ul>
