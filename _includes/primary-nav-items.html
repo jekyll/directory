@@ -1,9 +1,9 @@
 <ul>
   <li class="{% if page.overview %}current{% endif %}">
-    <a href="{{ site.url | append: site.baseurl }}/">Overview</a>
+    <a href="{{ '/' | relative_url }}">Overview</a>
   </li>
   <li class="{% if page.url contains '/plugins/' %}current{% endif %}">
-    <a href="{{ site.url | append: site.baseurl }}/plugins/">Index</span></a>
+    <a href="{{ '/plugins/' | relative_url }}">Index</span></a>
   </li>
   <li class="">
     <a href="{{ site.repository }}"><span class="hide-on-mobiles">View on </span>GitHub</a>
