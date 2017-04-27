@@ -397,6 +397,9 @@ article {
     padding: 40px 40px 30px;
     font-size: 21px;
   }
+  .plugin-item {
+    padding: 0 40px
+  }
 }
 
 /* Right-side nav - used by both docs and news */
@@ -565,6 +568,17 @@ article h2:first-child {
   text-shadow: 0 -1px 0 rgba(0,0,0,.5);
 }
 
+.gh-label {
+  margin: 0 10px;
+  padding: 7px 12px;
+  font-size: 12px;
+  vertical-align: middle;
+  background: #333;
+  border-radius: 15px;
+
+  &.active { background-color: #388e3c; }
+}
+
 @media (max-width: 568px){
   .post-category {
     padding-left: 30px;
@@ -637,6 +651,7 @@ pre, code {
 }
 
 .highlight, p > pre, p > code, p > nobr > code, li > code, h5 > code, .note > code {
+  margin: 0.25em auto;
   background: #333;
   color: #fff;
   border-radius: 5px;
@@ -951,6 +966,22 @@ code.option, code.flag, code.filter, code.output {
     overflow-x: scroll;
     margin: 0 -40px;
     padding: 0 10px;
+  }
+}
+
+.plugin-item {
+  padding: 0 20px;
+  border-top: 1px solid #575757;
+  border-bottom: 1px solid #2f2d2d;
+
+  &:first-of-type { border-top-color: transparent; }
+  &:last-of-type { border-bottom-color: transparent; }
+
+  &:hover {
+    background-color: #2b2b2b;
+
+    .gh-label { background-color: #388e3c; }
+    code { background-color: #212121; }
   }
 }
 
