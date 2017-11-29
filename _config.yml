@@ -1,7 +1,7 @@
-title: "Jekyll Plugins • Community-built plugins to level up your Jekyll experience."
+title: "Jekyll directory • Community-built themes and plugins to level up your Jekyll experience."
 repository: https://github.com/jekyll/plugins
 url: https://jekyll.github.io
-baseurl: /plugins
+baseurl: /directory
 lang: "en_US"
 
 gems:
