@@ -5,7 +5,7 @@ url: https://jekyll.github.io
 baseurl: /directory
 lang: "en_US"
 
-gems:
+plugins:
   - jekyll-sitemap
   - jemoji
 
