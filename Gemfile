@@ -1,6 +1,13 @@
+# frozen_string_literal: true
+
 source "https://rubygems.org"
 
-gem "github-pages", group :jekyll_plugins
+gem "jekyll", "~> 3.7"
+
+group :jekyll_plugins do
+  gem "jekyll-sitemap"
+  gem "jemoji"
+end
 
 group :test do
   gem "gems"
