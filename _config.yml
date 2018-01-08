@@ -1,15 +1,18 @@
-title: "Jekyll Plugins • Community-built plugins to level up your Jekyll experience."
+title: "Jekyll directory"
+description: "Community-built themes and plugins to level up your Jekyll experience"
 repository: https://github.com/jekyll/plugins
 url: https://jekyll.github.io
-baseurl: /plugins
+baseurl: /directory
 lang: "en_US"
 
 gems:
-    - jekyll-sitemap
-    - jemoji
+  - jekyll-sitemap
+  - jemoji
 
 collections:
   plugins:
+    output: true
+  themes:
     output: true
 
 defaults:
@@ -20,12 +23,19 @@ defaults:
       layout: plugin              # DO NOT CHANGE THIS DEFAULT
       type: rubygems              # DO NOT CHANGE THIS DEFAULT
 
+  - scope:
+      type: themes
+    values:
+      permalink: /themes/:title/  # DO NOT CHANGE THIS DEFAULT
+      layout: theme               # DO NOT CHANGE THIS DEFAULT
+      type: rubygems              # DO NOT CHANGE THIS DEFAULT
+
 exclude:
-  - vendor
+  - CONTRIBUTING.md
   - Gemfile*
+  - History.markdown
   - Rakefile
   - README.md
-  - CONTRIBUTING.md
-  - History.markdown
-  - spec
   - script
+  - spec
+  - vendor

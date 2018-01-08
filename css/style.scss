@@ -53,6 +53,16 @@ body > header h1 span {
   display: none;
 }
 
+.logo {
+  max-width: 100%;
+}
+
+@media (max-width: 568px){
+  .logo {
+    max-width: 70%;
+  }
+}
+
 nav ul {
   padding: 0;
   margin: 0;
@@ -63,17 +73,21 @@ nav li {
 }
 
 .main-nav {
-  margin-top: 52px;
+  margin-top: 4.5vw;
 }
 
 .main-nav li {
-  margin-right: 10px;
+  margin-right: .5em;
 }
 
 .main-nav li a {
+  font-size: 14px;
+}
+
+.main-nav li a,
+.call-to-action a {
   border-radius: 5px;
   font-weight: 800;
-  font-size: 14px;
   padding: 0.5em 1em;
   text-shadow: none;
   text-transform: uppercase;
@@ -82,13 +96,21 @@ nav li {
    -webkit-transition: all .25s;
 }
 
+@media (min-width:569px) and (max-width:620px) {
+  .main-nav li a {
+    padding: 0.5em;
+  }
+}
+
 .main-nav li a:hover {
   background: #252525;
   box-shadow: inset 0 1px 3px rgba(0,0,0,.5), 0 1px 0 rgba(255,255,255,.1);
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 
-.main-nav li.current a {
+.main-nav li.current a,
+.call-to-action a,
+.call-to-action a:hover, {
   background: #fc0;
   color: #222;
   box-shadow: inset 0 1px 0 rgba(255,255,255,.5), 0 1px 5px rgba(0,0,0,.5);
@@ -192,15 +214,9 @@ body > footer a:hover img {
 }
 
 .intro p {
-  font-size: 1.75em;
+  font-size: 3rem;
   line-height: 1em;
   margin: 0;
-}
-
-@media (min-width: 569px){
-  .intro p {
-    font-size: 3.2em;
-  }
 }
 
 /* Quickstart */
@@ -689,6 +705,8 @@ p {
 .align-right { text-align: right; }
 .align-left { text-align: left; }
 .align-center { text-align: center; }
+.call-to-action { margin-top: 2em; }
+
 
 /* Article HTML */
 
@@ -953,5 +971,45 @@ code.option, code.flag, code.filter, code.output {
     padding: 0 10px;
   }
 }
+
+/* Themes */
+
+figure {
+  margin: 1em 0;
+}
+
+.grid.themes {
+  margin-bottom: 1em;
+}
+
+.theme-title {
+  font-size: 1.2rem;
+}
+
+.overview .theme-title {
+  padding-top: .5em;
+}
+
+@media (min-width: 568px) and (max-width: 968px){
+  .theme-title {
+    font-size: 2vw;
+  }
+  .themes-directory .theme-title {
+    font-size: 2.75vw;
+  }
+}
+
+@media (min-width: 968px) {
+  .theme-title {
+    font-size: 1.6rem;
+  }
+  .theme-title {
+    font-size: 1.6rem;
+  }
+  .overview .theme-title {
+    font-size: 1.2rem;
+  }
+}
+
 
 @import "pygments";

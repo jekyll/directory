@@ -1,3 +1,4 @@
 #!/bin/bash
+script/fmt
 script/test
 script/scan

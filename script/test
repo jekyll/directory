@@ -1,4 +1,4 @@
 #!/bin/sh
 set -e
 bundle exec rspec --format progress --color
-bundle exec jekyll build -s $(pwd) -d tmp/site/plugins
+bundle exec jekyll build -s $(pwd) -d tmp/site/directory
