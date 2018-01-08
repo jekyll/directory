@@ -1,6 +1,6 @@
 title: "Jekyll directory"
 description: "Community-built themes and plugins to level up your Jekyll experience"
-repository: https://github.com/jekyll/plugins
+repository: https://github.com/jekyll/directory
 url: https://jekyll.github.io
 baseurl: /directory
 lang: "en_US"
