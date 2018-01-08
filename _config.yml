@@ -1,7 +1,7 @@
 title: "Jekyll directory"
 description: "Community-built themes and plugins to level up your Jekyll experience"
-repository: https://github.com/dirtyf/plugins
-url: https://dirtyf.github.io
+repository: https://github.com/jekyll/plugins
+url: https://jekyll.github.io
 baseurl: /directory
 lang: "en_US"
 

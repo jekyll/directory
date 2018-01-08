@@ -9,3 +9,7 @@
   * Check that gems exist (#28)
   * Ignore edit link urls in html-proofer (#37)
   * Mention Github Pages support and compatibility (#36)
+
+### Documentation
+
+  * rename `.markdown` documents in `_plugins` to `.md` (#40)

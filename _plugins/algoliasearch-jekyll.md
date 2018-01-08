@@ -1,8 +1,8 @@
 ---
-title: algoliasearch-jekyll
+title: jekyll-algolia
 description: >
-  Index your content with Algolia and add powerful search to your Jekyll website.
+  Add fast and relevant search to your Jekyll site
 author: algolia
-git: git@github.com:algolia/algoliasearch-jekyll.git
-repository: https://github.com/algolia/algoliasearch-jekyll
+git: git@github.com:algolia/jekyll.git
+repository: https://github.com/algolia/jekyll-algolia
 ---
