@@ -10,7 +10,7 @@ permalink: /themes/
     <img class="theme-thumbnail" src="{{ site.baseurl }}/assets/img/themes/{{ theme.title }}.jpg" alt=""/>
   </div>
   <div class="unit half">
-    <h2 class="theme-title"><a href="{{ theme.url | prepend: site.baseurl }}" title="{{ theme.title }}">{{ theme.title }}</a></h2>
+    <h2 class="theme-title"><a href="{{ theme.url | relative_url }}" title="{{ theme.title }}">{{ theme.title }}</a></h2>
     {{ theme.description | markdownify }}
   </div>
 </div>
