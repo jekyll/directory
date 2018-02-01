@@ -6,7 +6,9 @@
   {{ content }}
 
   {% include footer.html %}
-  {% include analytics.html %}
 
+  {% if jekyll.env == production %}
+    {% include analytics.html %}
+  {% endif %}
 </body>
 </html>
