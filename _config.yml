@@ -30,6 +30,9 @@ defaults:
       layout: theme               # DO NOT CHANGE THIS DEFAULT
       type: rubygems              # DO NOT CHANGE THIS DEFAULT
 
+sass:
+  style: compressed
+
 exclude:
   - CONTRIBUTING.md
   - Gemfile*
