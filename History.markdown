@@ -13,3 +13,7 @@
 ### Documentation
 
   * rename `.markdown` documents in `_plugins` to `.md` (#40)
+
+### Development Fixes
+
+  * Update Rubocop (#43)
