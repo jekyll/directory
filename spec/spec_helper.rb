@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "gems"
 require "rspec/expectations"
 require "safe_yaml"
