@@ -7,6 +7,10 @@ Style/Documentation:
 Style/FileName:
   Enabled: false
 
+Jekyll/NoPutsAllowed:
+  Exclude:
+    - script/scan
+
 AllCops:
   Exclude:
     - vendor/**/*

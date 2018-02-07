@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "gems"
 require "rspec/expectations"
 require "safe_yaml"
@@ -7,7 +9,7 @@ RSpec::Matchers.define :be_avaliable_on_rubygems do
     begin
       Gems.info actual
       true
-    rescue
+    rescue StandardError
       false
     end
   end

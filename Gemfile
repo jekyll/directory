@@ -13,5 +13,5 @@ group :test do
   gem "gems"
   gem "html-proofer"
   gem "rspec"
-  gem "rubocop", "~> 0.51"
+  gem "rubocop", "~> 0.52"
 end
