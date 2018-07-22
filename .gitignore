@@ -1,5 +1,7 @@
 .bundle
 .sass-cache
+_data/plugins
+_data/themes
 _site/
 *.swp
 pkg/
