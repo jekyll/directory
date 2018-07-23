@@ -14,7 +14,7 @@ branches:
 jobs:
   include:
     -
-      if: branch = master AND (type != pull_request OR type != api)
+      if: branch == master && type != pull_request && type != api
       env: DEPLOY_BUILD=true
 
 deploy:
