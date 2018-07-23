@@ -1,0 +1,23 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require "open-uri"
+require "safe_yaml"
+
+def data_dir(*entries)
+  File.expand_path(File.join("..", "_data", *entries), __dir__)
+end
+
+entries = SafeYAML.load_file(data_dir("entries.yml"))
+entries.each do |type, list|
+  FileUtils.mkdir_p(data_dir(type))
+  list.each do |item|
+    begin
+      data = open("https://rubygems.org/api/v1/gems/#{item}.yaml").read
+      File.open(data_dir("#{type}/#{item}.yml"), "wb") { |file| file.puts data }
+    rescue OpenURI::HTTPError
+      puts "'#{item}' does not seem to exist at rubygems.org"
+      next
+    end
+  end
+end

@@ -11,3 +11,18 @@ script: script/cibuild
 branches:
   only:
     - master
+jobs:
+  include:
+    -
+      if: branch == master && type != pull_request && type != api
+      env: DEPLOY_BUILD=true
+
+deploy:
+  provider: pages
+  local-dir: _site
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep-history: true
+  on:
+    repo: jekyll/directory
+    branch: master

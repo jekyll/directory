@@ -2,3 +2,8 @@
 script/fmt
 script/test
 script/scan
+
+if [[ -v $DEPLOY_BUILD ]]; then
+  script/segregate
+  bundle exec jekyll build
+fi
