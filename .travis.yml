@@ -1,13 +1,15 @@
 language: ruby
+cache: bundler
 rvm:
   - 2.6
-env:
-  global:
-    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-cache: bundler
-sudo: false
+
 before_script: bundle update
 script: script/cibuild
+
 branches:
   only:
     - master
+env:
+  global:
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+
