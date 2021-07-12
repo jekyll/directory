@@ -2,7 +2,8 @@
 
 source "https://rubygems.org"
 
-gem "jekyll", "~> 3.7"
+gem "jekyll", "~> 3.9"
+gem "kramdown-parser-gfm"
 
 group :jekyll_plugins do
   gem "jekyll-seo-tag"
