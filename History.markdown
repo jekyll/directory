@@ -13,6 +13,7 @@
 ### Documentation
 
   * rename `.markdown` documents in `_plugins` to `.md` (#40)
+  * Add codetheme theme (#51)
 
 ### Development Fixes
 
